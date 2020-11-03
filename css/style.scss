@@ -9,9 +9,8 @@
     min-height: 100vh;
 }
 header{
-    background-color: gray;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    background-color: black;
+    
 
     .logo{
         z-index: 20;
@@ -26,8 +25,31 @@ header{
         bottom: 1vw;
         right: 1vw;
     }
+    .call{
+        color: white;
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+        font-size: 1rem;
+        z-index: 999;
+        position: absolute;
+        left: 35vw;
+        font-family: 'Heebo', sans-serif;
+        text-decoration: none;
+        line-height: 15vw;
+
+        &:hover{
+            font-size: 2rem;
+            color: grey;
+        }
+        &:active{
+            transition: all 0.2s ease-in;
+            font-size: 0.9rem;
+        }
+    }
+
 }
-@media only screen and (min-width: 991px){
+
+// @media only screen and (min-width: 991px){
     .dropdown{
         text-align: center;
         font-size: 20px;
@@ -71,6 +93,9 @@ header{
         display: block;
         margin: 10px;
     }
+// }
+main{
+   min-height: 185vh;
 }
 .mainpic{
     padding: 1rem;
@@ -79,9 +104,40 @@ header{
 }
 .maintext{
     padding: 1rem;
-    font-size: 20px;
+    
+    p{
+        font-size: 40px;
+    }
     
 }
+.part2{
+    background-color: rgb(245, 59, 59);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+
+    .specialimg{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        div {
+            background-size: cover;
+            background-position: center center;
+            margin: 10px;
+        }
+    }
+    .special{
+        font-size: 3rem;
+        margin-top: 300px;
+        color: white;
+        font-family: cambria;
+    }
+    
+    
+}
+
+
+
 @media only screen and (min-width: 768px){
     .maintext{
         font-size: 30px;
@@ -119,6 +175,11 @@ header{
             height: 534px;
             padding: 1rem;
         }
+        .aboutpic4{
+            width: 100%;
+            height: 400px;
+            padding: 1rem;
+        }
         .aboutcontent p{
             font-size: 20px;
             padding: 1rem;
@@ -149,65 +210,182 @@ header{
          bottom: 1rem;
          height: 700px;
      }
+     
 
 }
 footer{
-    min-height: 20vh;
-    background-color: black;
-}
-footer .logo{
-    width: 25%;
-    margin-left: 120px;
-}
-.socialmedia ul {
-    position: absolute;
-    margin-left: 103px;
     display: flex;
-    padding: .5rem;
-    list-style: none;
- }
- .socialmedia ul li{
-    list-style: none;
-    margin: 0 5px;
-}
-.socialmedia ul li .fa{
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
 
-    
-    transition: .6s;
+    .logo{
+        width: 4rem;
+        height: auto;
+        padding-bottom: 1rem;
+    }
+}
+.socialmedia{
+    ul{
+        display: flex;
+        list-style: none;
+        position: relative;
+        font-size: 2rem;
+        width: auto;
+        height: auto;
+
+        li:not(:first-of-type){
+            padding-left: 4rem;
+        }
+        li{
+            list-style: none;
+            .fa{
+                transition: .6s;
+                color: white;
+            }
+            a{
+                position: absolute;
+                transition: .6s;
+                box-shadow: 0 5px 4px gray;
+
+                &:hover{
+                    transform: translate(0,-10px);
+                }
+            }
+        }
+    }
+}
+.copyright{
+    padding-top: 4rem;
     color: white;
 }
-.socialmedia ul li a{
-    position: relative;
-    display: block;
-    transition: .6s;
-    box-shadow: 0 5px 4px gray;
-   
-    
-}
-.socialmedia ul li a:hover{
-  transform: translate(0, -10px);
-}
-@media only screen and (min-width: 768px){
-    footer .logo{
-        width: 133px;
-        margin-left: 304px;
+@media only screen and(min-width: 768px){
+    footer{
+        width: 100%;
     }
-    .socialmedia ul{
-        margin-left: 297px;
-        font-size: 2rem;
-    }
-    
 }
-@media only screen and (min-width: 991px){
-    footer .logo{
-        width: 82px;
-        margin-left: 655px;
+@media only screen and(max-width: 320px){
+    footer{
+        width: 100%
     }
-    .socialmedia ul{
-        margin-left: 614px;
-        font-size: 2rem;
+}
+.menu{
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    height: fit-content;
+    h1{
+        color: red;
+        font-size: 3rem;
+        text-align: center;
+
+    }
+    .menu-items{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+        position: relative;
+        height: 100%;
+        justify-items: center;
+        column-gap: 1vw;
+        row-gap: 1vw;
+
+        .page{
+            width: 100%;
+            position: relative;
+            
+           div h2{
+               width: 100%;
+               text-align: center;
+               font-size: 2rem;
+               padding: 5px 5px;
+           }
+           div h3{
+               font-size: 1.5rem;
+               width: 100%;
+               padding: 10px 10px;
+               text-align: center;
+           }
+           div p{
+               font-size: 1rem;
+               padding: 5px;
+           }
+        }
+        
+    }
+}
+@media only screen and(min-width: 760px){
+    .menu{
+        width: 100%;
+        align-items: center;
+        justify-items: center;
+
+       
     }
 
 }
+@media only screen and(min-width: 991){
+    .menu-items{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+.login-box{
+    
+    height: 80vh;
+    
+    position: relative;
+    left: 35%;
+
+    
+        h1{
+    
+            font-size: 60px;
+            margin-bottom: 50px;
+            padding: 13px 0;
+            
+        }
+
+        .textbox{
+            width: 100%;
+            overflow: hidden;
+            font-size: 20px;
+            padding: 8px 0;
+            margin: 8px 0;
+        
+        }
+    
+
+}
+
+.location{
+    img{
+        width: 70%;
+        margin-left: 16%;;
+    }
+    h1{
+        color: red;
+        font-size: 3rem;
+        text-shadow: 5px 5px grey;
+        text-align: center;
+    }
+    .contact{
+        font-size: 2rem;
+        text-align: center;
+        
+    }
+    .map{
+        margin-left: 28%;;
+    }
+}
+@media only screen and(min-width: 991px){
+    .location{
+        .map{
+            margin-left: 37%;
+        }
+    }
+}
+ 
+
 
 
