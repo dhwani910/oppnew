@@ -8,13 +8,14 @@
     grid-template-rows: 180px 1fr 330px;
     min-height: 100vh;
 }
+
 header{
     background-color: black;
     
 
     .logo{
         z-index: 20;
-        height: 14vh;
+        height: 18vh;
         position: absolute;
         top: 1vw;
         left: 1vw;
@@ -31,11 +32,11 @@ header{
         margin-bottom: 1rem;
         font-size: 1rem;
         z-index: 999;
-        position: absolute;
-        left: 35vw;
+        position: relative;
+        left: 202vw;
         font-family: 'Heebo', sans-serif;
         text-decoration: none;
-        line-height: 15vw;
+        line-height: 30vw;
 
         &:hover{
             font-size: 2rem;
@@ -48,6 +49,19 @@ header{
     }
 
 }
+@media only screen and(min-width: 768px){
+    header .call{
+        left: 76vw;
+        line-height: 13vw;
+    }
+}
+@media only screen and(min-width: 991px){
+    header .call{
+        left: 80vw;
+        line-height: 8vw;
+    }
+}
+
 
 // @media only screen and (min-width: 991px){
     .dropdown{
@@ -142,6 +156,10 @@ main{
     .maintext{
         font-size: 30px;
     }
+    header .logo{
+        height: 11vh;
+    }
+    
 }
 @media only screen and (min-width: 991px){
     section{
@@ -326,8 +344,9 @@ footer{
 }
 @media only screen and(min-width: 991){
     .menu-items{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        align-items: center;
+        
+       
     }
 }
 .login-box{
@@ -375,13 +394,16 @@ footer{
         
     }
     .map{
-        margin-left: 28%;;
+        margin-left: 19%;
+        height: 300px;
+        width: 542px;
+       
     }
 }
 @media only screen and(min-width: 991px){
     .location{
         .map{
-            margin-left: 37%;
+            margin-left: 32%;
         }
     }
 }
