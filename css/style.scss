@@ -311,7 +311,13 @@ footer{
         .page{
             width: 100%;
             position: relative;
+            display: grid;
+            grid-template-rows: 1fr auto;
             
+
+            img{
+                place-self: center;
+            }
            div h2{
                width: 100%;
                text-align: center;
