@@ -1,0 +1,187 @@
+header{
+    background-color: black;
+    height: 112px;
+    
+
+    .logo{
+        z-index: 20;
+        height: 13vh;
+        position: absolute;
+        top: 3vw;
+        left: 1vw;
+    }
+    .menubar .fa{
+      color: white;
+      position: absolute;
+      right: 10px;
+      top: 64px;
+      font-size: 30px;
+    }
+    
+
+   
+    .call{
+        color: white;
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+        font-size: 1rem;
+        z-index: 999;
+        position: absolute;
+        font-family: 'Heebo', sans-serif;
+        text-decoration: none;
+        top: 67px;
+        left: 116px;
+
+        &:hover{
+            font-size: 2rem;
+            color: grey;
+        }
+        &:active{
+            transition: all 0.2s ease-in;
+            font-size: 0.9rem;
+        }
+    }
+
+}
+@media only screen and(min-width: 600px){
+    header {
+        .logo{
+            height: 10vh;
+            top: 1vw;
+            left: 1vw;
+        }
+        .call{
+            left: 101px;
+        }
+
+    }
+
+}
+
+@media only screen and(min-width: 768px){
+    header .call{
+        // left: 76vw;
+        line-height: 10vw;
+        pointer-events: none;
+
+        &:hover{
+            font-size: 1.5rem;
+            color: grey;
+        }
+    }
+
+    
+    header .logo{
+        height: 7vh;
+        top: 1vw;
+    }
+
+    .dropdown{
+        text-align: center;
+        font-size: 15px;
+        
+        
+    }
+    .dropdown ul{
+        display: inline-flex;
+        list-style: none;
+        color: white;
+        // margin-left: 130px;
+        margin-top: 5px;
+    
+    }
+    .dropdown ul li{
+        // width: 150px;
+        padding: 5px;
+        
+    }
+    .dropdown ul li a{
+        text-decoration: none;
+        color: white;
+    }
+     .dropdown ul li:hover{
+        background-color: gray;
+    }
+    .dropdown .fa{
+        margin-left: 6px;
+    }
+    .submenu{
+        display: none;
+    }
+    .dropdown ul li:hover .submenu{
+        display: block;
+        position: absolute;
+        
+        margin-left: -15px;
+    
+    }
+    .dropdown ul li:hover .submenu ul{
+        display: block;
+        margin: 10px;
+    }
+    .menubar .fa{
+        display: none;
+    }
+}
+@media only screen and(min-width: 991px){
+    header .call{
+        // left: 90vw;
+        line-height: 3vw;
+        pointer-events: none;
+
+        &:hover{
+            font-size: 1.5rem;
+            color: grey;
+        }
+    }
+
+    .dropdown{
+        text-align: center;
+        font-size: 18px;
+        
+        
+    }
+    .dropdown ul{
+        display: inline-flex;
+        list-style: none;
+        color: white;
+        // margin-left: 130px;
+        margin-top: 6px;
+    
+    }
+    .dropdown ul li{
+        width: 150px;
+        padding: 3px;
+        
+    }
+    .dropdown ul li a{
+        text-decoration: none;
+        color: white;
+    }
+     .dropdown ul li:hover{
+        background-color: gray;
+    }
+    .dropdown .fa{
+        margin-left: 6px;
+    }
+    .submenu{
+        display: none;
+    }
+    .dropdown ul li:hover .submenu{
+        display: block;
+        position: absolute;
+        
+        margin-left: -15px;
+    
+    }
+    .dropdown ul li:hover .submenu ul{
+        display: block;
+        margin: 10px;
+    }
+    .menubar .fa{
+        display: none;
+    }
+
+   
+}
+    

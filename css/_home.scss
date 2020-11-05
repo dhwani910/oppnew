@@ -1,0 +1,56 @@
+main{
+    min-height: 185vh;
+ }
+ .mainpic{
+     padding: 1rem;
+     width: 100%;
+ 
+ }
+ .maintext{
+     padding: 1rem;
+     
+     p{
+         font-size: 40px;
+     }
+     
+ }
+ .part2{
+     background-color: rgb(245, 59, 59);
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+ 
+ 
+     .specialimg{
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+ 
+         div {
+             background-size: cover;
+             background-position: center center;
+             margin: 10px;
+         }
+     }
+     .special{
+         font-size: 3rem;
+         margin-top: 300px;
+         color: white;
+         font-family: cambria;
+     }
+     
+     
+ }
+//  tablet layout
+@media only screen and(min-width: 768px){
+    .maintext{
+        font-size: 30px;
+    }
+}
+
+// desktop layout
+
+@media only screen and(min-width: 991px){
+    section{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}

@@ -1,0 +1,31 @@
+.location{
+    place-self: center;
+    img{
+        width: 70%;
+        margin-left: 16%;;
+    }
+    h1{
+        color: red;
+        font-size: 3rem;
+        text-shadow: 5px 5px grey;
+        text-align: center;
+    }
+    .contact{
+        font-size: 2rem;
+        text-align: center;
+        
+    }
+    .map{
+        
+        height: 300px;
+        width: 542px;
+       
+    }
+}
+@media only screen and(min-width: 991px){
+    .location{
+        .map{
+            margin-left: 32%;
+        }
+    }
+}
