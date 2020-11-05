@@ -1,6 +1,6 @@
 main{
     min-height: 185vh;
- }
+}
  .mainpic{
      padding: 1rem;
      width: 100%;
@@ -17,7 +17,7 @@ main{
  .part2{
      background-color: rgb(245, 59, 59);
      display: grid;
-     grid-template-columns: 1fr 1fr;
+     grid-template-columns: 1fr;
  
  
      .specialimg{
@@ -39,10 +39,24 @@ main{
      
      
  }
+  .miki{
+     width: 77%;
+     height: auto;
+     padding: 2rem;
+     place-self: center;
+ }
+ .hours{
+     width: 50%;
+     height: auto;
+     place-self: center;
+ }
 //  tablet layout
 @media only screen and(min-width: 768px){
     .maintext{
         font-size: 30px;
+    }
+    .part2{
+        grid-template-columns: 1fr 1fr;
     }
 }
 
@@ -51,6 +65,9 @@ main{
 @media only screen and(min-width: 991px){
     section{
         display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .part2{
         grid-template-columns: 1fr 1fr;
     }
 }

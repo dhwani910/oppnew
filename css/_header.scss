@@ -1,67 +1,64 @@
 header{
     background-color: black;
     height: 112px;
-    
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr 1fr;
 
     .logo{
-        z-index: 20;
-        height: 13vh;
-        position: absolute;
-        top: 3vw;
-        left: 1vw;
+        grid-column: 1;
+        grid-row: 1/3;
+        width: 6rem;
+        height: auto;
+        img{
+            width: 100%;
+            height: auto;
+        }
     }
-    .menubar .fa{
-      color: white;
-      position: absolute;
-      right: 10px;
-      top: 64px;
-      font-size: 30px;
+    .dropdown{
+        grid-column: 2;
+        grid-row: 1;
+        ul{
+            padding: none;
+            margin-left: 4rem;
+            color: white;
+            li a{
+                color: white;
+            }
+        }
     }
     
 
    
     .call{
+        grid-column: 2;
+        grid-row: 2;
         color: white;
-        margin-right: 1rem;
-        margin-bottom: 1rem;
+        text-align: right;
+        width: max-content;
+        height: max-content;
+        justify-self: right;
+        align-self: center;
         font-size: 1rem;
-        z-index: 999;
-        position: absolute;
-        font-family: 'Heebo', sans-serif;
         text-decoration: none;
-        top: 67px;
-        left: 116px;
 
         &:hover{
-            font-size: 2rem;
+            
             color: grey;
         }
         &:active{
             transition: all 0.2s ease-in;
-            font-size: 0.9rem;
+            
         }
     }
 
 }
-@media only screen and(min-width: 600px){
-    header {
-        .logo{
-            height: 10vh;
-            top: 1vw;
-            left: 1vw;
-        }
-        .call{
-            left: 101px;
-        }
 
-    }
-
-}
 
 @media only screen and(min-width: 768px){
+    
     header .call{
-        // left: 76vw;
-        line-height: 10vw;
+        
         pointer-events: none;
 
         &:hover{
@@ -69,31 +66,15 @@ header{
             color: grey;
         }
     }
-
-    
-    header .logo{
-        height: 7vh;
-        top: 1vw;
-    }
-
-    .dropdown{
-        text-align: center;
-        font-size: 15px;
-        
-        
-    }
     .dropdown ul{
         display: inline-flex;
         list-style: none;
         color: white;
-        // margin-left: 130px;
-        margin-top: 5px;
+         margin-top: 28px;
     
     }
     .dropdown ul li{
-        // width: 150px;
         padding: 5px;
-        
     }
     .dropdown ul li a{
         text-decoration: none;
@@ -105,9 +86,7 @@ header{
     .dropdown .fa{
         margin-left: 6px;
     }
-    .submenu{
-        display: none;
-    }
+    
     .dropdown ul li:hover .submenu{
         display: block;
         position: absolute;
@@ -125,7 +104,6 @@ header{
 }
 @media only screen and(min-width: 991px){
     header .call{
-        // left: 90vw;
         line-height: 3vw;
         pointer-events: none;
 
@@ -138,15 +116,12 @@ header{
     .dropdown{
         text-align: center;
         font-size: 18px;
-        
-        
     }
     .dropdown ul{
         display: inline-flex;
         list-style: none;
         color: white;
-        // margin-left: 130px;
-        margin-top: 6px;
+        margin-top: 30px;
     
     }
     .dropdown ul li{
@@ -164,9 +139,7 @@ header{
     .dropdown .fa{
         margin-left: 6px;
     }
-    .submenu{
-        display: none;
-    }
+    
     .dropdown ul li:hover .submenu{
         display: block;
         position: absolute;

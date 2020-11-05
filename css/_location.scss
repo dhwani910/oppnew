@@ -1,5 +1,15 @@
 .location{
-    place-self: center;
+    .info{
+        display: grid;
+        grid-template-rows: auto 1fr;
+        row-gap: 2rem;
+        justify-items: center;
+        align-self: center;
+        p{
+            font-size: 28px;
+            text-align: center;
+        }
+    }
     img{
         width: 70%;
         margin-left: 16%;;
@@ -20,12 +30,5 @@
         height: 300px;
         width: 542px;
        
-    }
-}
-@media only screen and(min-width: 991px){
-    .location{
-        .map{
-            margin-left: 32%;
-        }
     }
 }
