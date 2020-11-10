@@ -1,63 +1,58 @@
-.about{
-    .aboutmainpic{
+.about {
+    .aboutmainpic {
         width: 100%;
         padding: 1rem;
     }
 
-    .text h1{
+    .text h1 {
         font-size: 3rem;
         color: red;
         text-align: center;
     }
-          .aboutpic1{
-        width: 100%;
-        padding: 1rem;
-
-    }
-    .aboutpic2{
+    .aboutpic1 {
         width: 100%;
         padding: 1rem;
     }
-    .aboutpic3{
+    .aboutpic2 {
+        width: 100%;
+        padding: 1rem;
+    }
+    .aboutpic3 {
         width: 100%;
         height: 534px;
         padding: 1rem;
     }
-    .aboutpic4{
+    .aboutpic4 {
         width: 100%;
         height: 400px;
         padding: 1rem;
     }
-    .aboutcontent p{
+    .aboutcontent p {
         font-size: 20px;
         padding: 1rem;
     }
+}
+@media only screen and (min-width: 768px) {
+    .about .aboutcontent p {
+        font-size: 34px;
+    }
+}
+@media only screen and (min-width: 991px) {
+    .aboutcontent {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    p {
+        text-align: center;
+        font-size: 28px;
 
-}
-@media only screen and (min-width: 768px){
-.about .aboutcontent p {
-    font-size: 34px;
-}
-
-}
-@media only screen and (min-width: 991px){
-.aboutcontent{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-p{
-    text-align: center;
-    font-size: 28px;
-    
-    padding: 1rem;
- }
- .aboutpic2{
-     height: 95%;
- }
- .aboutpic3{
-     bottom: 1rem;
-     height: 700px;
- }
- 
-
+        padding: 1rem;
+    }
+    .aboutpic2 {
+        height: 95%;
+    }
+    .aboutpic3 {
+        bottom: 1rem;
+        height: 700px;
+    }
 }

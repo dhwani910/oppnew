@@ -1,34 +1,31 @@
-.location{
-    .info{
+.location {
+    .info {
         display: grid;
         grid-template-rows: auto 1fr;
         row-gap: 2rem;
         justify-items: center;
         align-self: center;
-        p{
+        p {
             font-size: 28px;
             text-align: center;
         }
     }
-    img{
+    img {
         width: 70%;
-        margin-left: 16%;;
+        margin-left: 16%;
     }
-    h1{
+    h1 {
         color: red;
         font-size: 3rem;
         text-shadow: 5px 5px grey;
         text-align: center;
     }
-    .contact{
+    .contact {
         font-size: 2rem;
         text-align: center;
-        
     }
-    .map{
-        
+    .map {
         height: 300px;
         width: 542px;
-       
     }
 }

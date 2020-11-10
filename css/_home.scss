@@ -1,73 +1,74 @@
-main{
+main {
     min-height: 185vh;
 }
- .mainpic{
-     padding: 1rem;
-     width: 100%;
- 
- }
- .maintext{
-     padding: 1rem;
-     
-     p{
-         font-size: 40px;
-     }
-     
- }
- .part2{
-     background-color: rgb(245, 59, 59);
-     display: grid;
-     grid-template-columns: 1fr;
- 
- 
-     .specialimg{
-         display: grid;
-         grid-template-columns: 1fr 1fr;
- 
-         div {
-             background-size: cover;
-             background-position: center center;
-             margin: 10px;
-         }
-     }
-     .special{
-         font-size: 3rem;
-         margin-top: 300px;
-         color: white;
-         font-family: cambria;
-     }
-     
-     
- }
-  .miki{
-     width: 77%;
-     height: auto;
-     padding: 2rem;
-     place-self: center;
- }
- .hours{
-     width: 50%;
-     height: auto;
-     place-self: center;
- }
+.mainpic {
+    padding: 1rem;
+    width: 100%;
+}
+.maintext {
+    padding: 1rem;
+
+    p {
+        font-size: 20px;
+    }
+}
+.part2 {
+    background-color: rgb(245, 59, 59);
+    display: grid;
+    grid-template-columns: 1fr;
+
+    .specialimg {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        div {
+            background-size: cover;
+            background-position: center center;
+            margin: 10px;
+        }
+    }
+    .special {
+        font-size: 2rem;
+        margin-top: 300px;
+        color: white;
+        font-family: cambria;
+    }
+}
+.miki {
+    width: 77%;
+    height: auto;
+    padding: 2rem;
+    place-self: center;
+}
+.hours {
+    width: 50%;
+    height: auto;
+    place-self: center;
+}
 //  tablet layout
-@media only screen and(min-width: 768px){
-    .maintext{
+@media only screen and(min-width: 768px) {
+    .maintext {
         font-size: 30px;
     }
-    .part2{
+    .part2 {
         grid-template-columns: 1fr 1fr;
     }
 }
 
 // desktop layout
 
-@media only screen and(min-width: 991px){
-    section{
+@media only screen and(min-width: 991px) {
+    .part2 .special {
+        font-size: 3rem;
+    }
+    .maintext p {
+        font-size: 40px;
+    }
+    section {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
-    .part2{
+    .part2 {
         grid-template-columns: 1fr 1fr;
     }
 }
