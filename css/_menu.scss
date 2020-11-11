@@ -26,6 +26,7 @@
 
             img {
                 place-self: center;
+                width: 100%;
             }
             div h2 {
                 width: 100%;
@@ -38,10 +39,13 @@
                 width: 100%;
                 padding: 10px 10px;
                 text-align: center;
+                font-family: sans-serif;
             }
             div p {
                 font-size: 1rem;
                 padding: 5px;
+                font-family: sans-serif;
+                
             }
         }
     }
@@ -53,6 +57,9 @@
         justify-items: center;
         .menu-items {
             grid-template-columns: 1fr 1fr;
+            .page img{
+                width: 100%;
+            }
         }
     }
 }

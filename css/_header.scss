@@ -22,9 +22,14 @@ header{
             padding: none;
             margin-left: 4rem;
             color: white;
-            li a{
-                color: white;
-            }
+            li{
+                padding: 0.1rem;
+            
+                a{
+                    color: white;
+                }
+
+            } 
         }
     }
     
@@ -41,6 +46,7 @@ header{
         align-self: center;
         font-size: 1rem;
         text-decoration: none;
+        
 
         &:hover{
             
